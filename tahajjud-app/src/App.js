@@ -1,7 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from './pages/Home';
+import Tahajjud from './pages/Tahajjud'
 import Creator from './pages/Creator';
+
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
           <h1 className='text-xl font-bold'>Tahajjud</h1>
           <ul className='flex space-x-4'>
             <li><a href="/" className='hover:underline font-bold'>Home</a></li>
+            <li><a href="/tahajjud" className='hover:underline font-bold'>Tahajjud</a></li>
             <li><a href="/creator" className='hover:underline font-bold'>Creator</a></li>
           </ul>
         </nav>
@@ -20,6 +23,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/tahajjud" element={<Tahajjud />} />
         <Route path="/creator" element={<Creator />} />
       </Routes>
     </Router>
