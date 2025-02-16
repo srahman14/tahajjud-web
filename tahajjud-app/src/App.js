@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Home from './pages/Home';
-import Tahajjud from './pages/Tahajjud'
+import Tahajjud from './pages/Tahajjud';
 import Creator from './pages/Creator';
 
 
