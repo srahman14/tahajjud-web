@@ -84,18 +84,21 @@ function PrayerTimes() {
   };
 
   return (
-    <div className="p-4 sm:p-6 md:p-12 lg:p-18 w-full min-h-screen flex flex-col">
+    <div className="p-4 sm:p-6 md:p-12 lg:p-18 w-full min-h-full justify-center items-center">
       <div className="bg-gray-100 p-8 rounded-lg flex flex-1 flex-col mt-10 mb-10 max-w-full sm:max-w-md lg:max-w-lg mx-auto">
         <h1 className="text-4xl font-semibold text-blue-700 mb-4 text-center">اَلسَلامُ عَلَيْكُم وَرَحْمَةُ اَللهِ وَبَرَكاتُهُ</h1>
         <p className="font-semibold text-blue-700 mb-0">
-          Below you will find the Tahajjud times for the last third of the night specifically calculated already for you. However if you wish to manually calculate the last third of the night, there is a Tahajjud calculator for that at the bottom of the screen.
+          Below you will find the Tahajjud times for the last third of the night specifically calculated already for you. Tahajjud calculator coming soon!
+        </p>
+        <p className="text-blue-700 mt-2 bg-yellow-200 p-2 rounded-lg hover:text-blue-500 hover:font-bold font-semibold hover:bg-yellow-300">
+          <a href="/tahajjud">More about Tahajjud...</a>
         </p>
       </div>
 
-      <div className="bg-gray-100 mb-6 p-8 rounded-t-lg flex-1 flex flex-col max-w-full sm:max-w-md lg:max-w-lg mx-auto">
+      <div className="bg-gray-100 mb-6 p-8 rounded-lg flex-1 flex flex-col max-w-full sm:max-w-md lg:max-w-lg mx-auto">
         <h1 className="tracking-tighter font-semibold text-blue-700 mb-4">
-          <span className="text-5xl underline mr-4">Tahajjud Times</span>
-          <span className="text-2xl block md:inline mt-4 italic">The Last Third of the Night</span>
+          <span className="text-4xl font-bold underline mb-2 block">Tahajjud Times</span>
+          <span className="text-xl italic">The Last Third of the Night</span>
         </h1>
 
         {loading ? (
@@ -160,12 +163,12 @@ function PrayerTimes() {
         )}
       </div>
 
-      <div className="bg-gray-100 mb-6 p-8 rounded-t-lg flex-1 flex flex-col max-w-full sm:max-w-md lg:max-w-lg mx-auto">
+      {/* <div className="bg-gray-100 mb-6 p-8 rounded-t-lg flex-1 flex flex-col max-w-full sm:max-w-md lg:max-w-lg mx-auto">
         <h1 className="text-5xl font-semibold text-blue-700 mb-4">Tahajjud Calculator</h1>
         <h2 className="text-3xl font-semibold text-blue-700">
-          <span>Tahajjud: </span>
+          <span>Coming SOON</span>
         </h2>
-      </div>
+      </div> */}
 
     </div>
   );
