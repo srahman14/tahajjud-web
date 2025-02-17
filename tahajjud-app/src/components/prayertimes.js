@@ -85,7 +85,7 @@ function PrayerTimes() {
 
   return (
     <div className="p-4 sm:p-6 md:p-12 lg:p-18 w-full min-h-full justify-center items-center mb-14">
-      <div className="bg-gray-100 p-8 rounded-lg flex flex-1 flex-col mb-10 max-w-full sm:max-w-md lg:max-w-lg mx-auto">
+      <div className="bg-gray-100 p-8 rounded-lg flex flex-1 flex-col mt-10 lg:mt-0 mb-10 max-w-full sm:max-w-md lg:max-w-lg mx-auto">
         <h1 className="text-4xl font-semibold text-blue-700 mb-4 text-center">اَلسَلامُ عَلَيْكُم وَرَحْمَةُ اَللهِ وَبَرَكاتُهُ</h1>
         <p className="font-semibold text-blue-700 mb-0">
           Below you will find the Tahajjud times for the last third of the night specifically calculated already for you. Tahajjud calculator coming soon!
@@ -109,14 +109,14 @@ function PrayerTimes() {
               <div>
                 <h2>
                   <span className="mr-1">Tahajjud</span>
-                  <span className="text-xl font-bold italic">today: </span>
+                  <span className="text-xl font-bold italic tracking-tighter">today: </span>
                   <span className="font-bold tracking-tighter block sm-inline lg:inline m-3">
                     {calculateTahajjudTime(prayerTimes.today?.timings.Maghrib, prayerTimes.today?.timings.Fajr)}
                   </span>
                 </h2>
               </div>
               <div>
-                <h3 className="text-xl font-bold">{getFormattedDate(0)}</h3>
+                <h3 className="text-xl font-bold tracking text-red-800">{getFormattedDate(0)}</h3>
               </div>
             </div>
 
@@ -124,13 +124,13 @@ function PrayerTimes() {
             <div>
                 <h2>
                   <span className="mr-1">Tahajjud</span>
-                  <span className="text-xl font-bold italic">tomorrow: </span>
+                  <span className="text-xl font-bold italic tracking-tighter">tomorrow: </span>
                   <span className="font-bold tracking-tighter block sm-inline lg:inline m-3">
                     {calculateTahajjudTime(prayerTimes.tomorrow?.timings.Maghrib, prayerTimes.tomorrow?.timings.Fajr)}
                   </span>                </h2>
               </div>
               <div>
-                <h3 className="text-xl font-bold">{getFormattedDate(1)}</h3>
+                <h3 className="text-xl font-bold tracking text-red-800">{getFormattedDate(1)}</h3>
               </div>
             </div>
 
@@ -138,14 +138,14 @@ function PrayerTimes() {
             <div>
                 <h2>
                   <span className="mr-1">Tahajjud</span>
-                  <span className="text-xl font-bold italic">overmorrow: </span>
-                  <span className="lg:m-0 font-bold tracking-tighter block sm-inline lg:inline sm:m-3">
+                  <span className="text-xl font-bold italic tracking-tighter">overmorrow: </span>
+                  <span className="lg:m-0 font-bold tracking-tighter block sm-inline lg:inline m-3">
                     {calculateTahajjudTime(prayerTimes.dayAfterTomorrow?.timings.Maghrib, prayerTimes.dayAfterTomorrow?.timings.Fajr)}
                   </span>
                 </h2>
               </div>
               <div>
-                <h3 className="text-xl font-bold">{getFormattedDate(2)}</h3>
+                <h3 className="text-xl font-bold tracking text-red-800">{getFormattedDate(2)}</h3>
               </div>
             </div>
 

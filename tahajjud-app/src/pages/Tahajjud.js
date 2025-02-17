@@ -9,7 +9,7 @@ function Tahajjud() {
           With regard to <span className='bg-yellow-200 p-1 rounded-lg'>tahajjud, it is (voluntary) prayers at night.</span> Some scholars stipulate that it is prayers at night that are offered after having slept.
         </p>
 
-        <p className="font-semibold bg-gray-300 rounded-lg p-3 text-blue-700 hover:text-blue-500 mt-4">
+        <p className="font-semibold bg-gray-300 rounded-lg p-3 text-blue-700 hover:text-blue-500 mt-4 overflow-x-hidden">
           <a href='https://islamqa.info/en/answers/216236/how-to-pray-tahajjud-and-witr#what-is-tahajjud'>Source: https://islamqa.info/en/answers/216236/how-to-pray-tahajjud-and-witr#what-is-tahajjud</a>
         </p>
       </div>
@@ -22,7 +22,7 @@ function Tahajjud() {
             <li className='mb-4'><span className='bg-yellow-200 p-1 rounded-lg'>Taraweeh</span> refers to qiyam al-layl in Ramadan at the beginning of the night, which should be made light and not lengthy. It may also be called tahajjud or qiyam al-layl.</li>
           </ol>
 
-          <p className="font-semibold bg-gray-300 rounded-lg p-3 text-blue-700 hover:text-blue-500 mt-4">
+          <p className="font-semibold bg-gray-300 rounded-lg p-3 text-blue-700 hover:text-blue-500 mt-4 overflow-x-hidden">
             <a href='https://islamqa.info/en/answers/143240/what-is-the-difference-between-tahajjud-and-qiyam-al-layl'>Source: https://islamqa.info/en/answers/143240/what-is-the-difference-between-tahajjud-and-qiyam-al-layl</a>
           </p>
       </div>
@@ -37,7 +37,7 @@ function Tahajjud() {
           <span className='italic'>Narrated by <span className='font-bold'>al-Bukhaari (1145) and Muslim (758)</span></span>
           </p>
 
-          <p className="font-semibold bg-gray-300 rounded-lg p-3 text-blue-700 hover:text-blue-500 mt-4">
+          <p className="font-semibold bg-gray-300 rounded-lg p-3 text-blue-700 hover:text-blue-500 mt-4 overflow-x-hidden">
             <a href='https://islamqa.info/en/answers/291824/the-virtue-of-offering-supplication-in-the-last-third-of-the-night'>Source: https://islamqa.info/en/answers/291824/the-virtue-of-offering-supplication-in-the-last-third-of-the-night</a>
           </p>
       </div>
@@ -53,7 +53,7 @@ function Tahajjud() {
           <span className='italic'>Narrated by <span className='font-bold'>al-Bukhari (946) and Muslim (749)</span></span>
           </p>
 
-          <p className="font-semibold bg-gray-300 rounded-lg p-3 text-blue-700 hover:text-blue-500 mt-4">
+          <p className="font-semibold bg-gray-300 rounded-lg p-3 text-blue-700 hover:text-blue-500 mt-4 overflow-x-hidden">
             <a href='https://islamqa.info/en/answers/216236/how-to-pray-tahajjud-and-witr#how-to-offer-prayers-at-night'>Source: https://islamqa.info/en/answers/216236/how-to-pray-tahajjud-and-witr#how-to-offer-prayers-at-night</a>
           </p>
       </div>
@@ -64,7 +64,7 @@ function Tahajjud() {
           This site uses the <span><a href='https://aladhan.com/' className='bg-yellow-200 p-1 rounded-lg hover:text-blue-500 hover:bg-yellow-300'>Aladhan API</a></span> to get the time of Maghrib and Fajr (using method of Umm al-Qura) <span className='bg-yellow-200 p-1 rounded-lg'>for London <b>only</b></span>. Thereafter, the time from Maghrib till Fajr is calculated and <span className='bg-yellow-200 p-1 rounded-lg'>divided into three thirds</span>, and simply we subtract the time from Fajr by one-third of the difference to find out the starting point of the <span className='bg-yellow-200 p-1 rounded-lg'>last third of the night!</span>
         </p>
         
-        <p className="font-semibold bg-gray-300 rounded-lg p-3 text-blue-700 hover:text-blue-500 mt-4">
+        <p className="font-semibold bg-gray-300 rounded-lg p-3 text-blue-700 hover:text-blue-500 mt-4 overflow-x-hidden">
           <a href='https://www.youtube.com/watch?v=rlzFTXfPpFU'>Explanation: https://www.youtube.com/watch?v=rlzFTXfPpFU</a>
         </p>
       </div>
