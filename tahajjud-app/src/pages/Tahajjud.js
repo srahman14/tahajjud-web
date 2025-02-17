@@ -76,7 +76,7 @@ function Tahajjud() {
         </p>
 
         <p className="font-semibold text-blue-700 mt-2">
-          These answers are just short and brief, and has much more to it. It is incumbent on any individual to do their research alone so that they may benefit more. 
+          These answers are just short and brief, and have more to it. It is incumbent on any individual to do their research alone so that they may benefit more. 
         </p>
 
         <p className="font-semibold bg-gray-300 rounded-lg p-3 text-blue-700 mt-4 text-center text-xl">

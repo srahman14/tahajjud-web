@@ -84,8 +84,8 @@ function PrayerTimes() {
   };
 
   return (
-    <div className="p-4 sm:p-6 md:p-12 lg:p-18 w-full min-h-full justify-center items-center">
-      <div className="bg-gray-100 p-8 rounded-lg flex flex-1 flex-col mt-10 mb-10 max-w-full sm:max-w-md lg:max-w-lg mx-auto">
+    <div className="p-4 sm:p-6 md:p-12 lg:p-18 w-full min-h-full justify-center items-center mb-14">
+      <div className="bg-gray-100 p-8 rounded-lg flex flex-1 flex-col mb-10 max-w-full sm:max-w-md lg:max-w-lg mx-auto">
         <h1 className="text-4xl font-semibold text-blue-700 mb-4 text-center">اَلسَلامُ عَلَيْكُم وَرَحْمَةُ اَللهِ وَبَرَكاتُهُ</h1>
         <p className="font-semibold text-blue-700 mb-0">
           Below you will find the Tahajjud times for the last third of the night specifically calculated already for you. Tahajjud calculator coming soon!

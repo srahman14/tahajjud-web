@@ -13,11 +13,11 @@ function Creator() {
           <p className='text-blue-700 text-lg bg-gray-300 p-2 rounded-lg mt-4 font-semibold tracking-tighter'>I only created this site in hopes that it benefits whoever uses it. <span className='block'>Barkallahu Feekum</span></p>
           
           <div className='flex space-x-4 mt-4 bg-gray-300 p-2 rounded-md'>
-            <a href='#' target='_blank' rel='noopener noreferrer' className='text-4xl hover:text-blue-500'>
+            <a href='https://github.com/srahman14' target='_blank' rel='noopener noreferrer' className='text-4xl hover:text-blue-500'>
               <i className="fa-brands fa-square-github"></i>
             </a>
 
-            <a href='#' target='_blank' rel='noopener noreferrer' className='text-4xl hover:text-blue-500'>
+            <a href='https://www.linkedin.com/in/sayed-r-596b97257/' target='_blank' rel='noopener noreferrer' className='text-4xl hover:text-blue-500'>
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </div>
