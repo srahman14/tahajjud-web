@@ -105,7 +105,7 @@ function PrayerTimes() {
           <p className="text-3xl text-blue-700">Loading prayer times...</p>
         ) : (
           <>
-          <div className="bg-gray-200 text-3xl font-semibold text-blue-700 mt-5 p-4 rounded-lg shadow-xl flex flex-row flex-wrap justify-between max-w-full sm:max-w-sm md:max-w-md lg:max-w-lg">
+          <div className="bg-gray-200 text-3xl font-semibold text-blue-700 mt-5 p-4 rounded-lg shadow-xl flex flex-col sm:flex-row justify-between max-w-full sm:max-w-sm md:max-w-md lg:max-w-lg">
               <div>
                 <h2>
                   <span className="mr-1">Tahajjud</span>
@@ -115,12 +115,12 @@ function PrayerTimes() {
                   </span>
                 </h2>
               </div>
-              <div>
+              <div className="mt-auto sm:mt-0">
                 <h3 className="text-xl font-bold tracking text-red-800">{getFormattedDate(0)}</h3>
               </div>
             </div>
 
-          <div className="bg-gray-200 text-3xl font-semibold text-blue-700 mt-5 p-4 rounded-lg shadow-xl flex flex-row flex-wrap justify-between max-w-full sm:max-w-sm md:max-w-md lg:max-w-lg">
+          <div className="bg-gray-200 text-3xl font-semibold text-blue-700 mt-5 p-4 rounded-lg shadow-xl flex flex-col sm:flex-row justify-between max-w-full sm:max-w-sm md:max-w-md lg:max-w-lg">
             <div>
                 <h2>
                   <span className="mr-1">Tahajjud</span>
@@ -129,22 +129,22 @@ function PrayerTimes() {
                     {calculateTahajjudTime(prayerTimes.tomorrow?.timings.Maghrib, prayerTimes.tomorrow?.timings.Fajr)}
                   </span>                </h2>
               </div>
-              <div>
+              <div className="mt-auto sm:mt-0">
                 <h3 className="text-xl font-bold tracking text-red-800">{getFormattedDate(1)}</h3>
               </div>
             </div>
 
-          <div className="bg-gray-200 text-3xl font-semibold text-blue-700 mt-5 p-4 rounded-lg shadow-xl flex flex-row flex-wrap justify-between max-w-full sm:max-w-sm md:max-w-md lg:max-w-lg">
+          <div className="bg-gray-200 text-3xl font-semibold text-blue-700 mt-5 p-4 rounded-lg shadow-xl flex flex-col sm:flex-row justify-between max-w-full sm:max-w-sm md:max-w-md lg:max-w-lg">
             <div>
                 <h2>
                   <span className="mr-1">Tahajjud</span>
-                  <span className="text-xl font-bold italic tracking-tighter">overmorrow: </span>
+                  <span className="text-xl font-bold italic tracking-tighter">overmorrow:</span>
                   <span className="lg:m-0 font-bold tracking-tighter block sm-inline lg:inline m-3">
                     {calculateTahajjudTime(prayerTimes.dayAfterTomorrow?.timings.Maghrib, prayerTimes.dayAfterTomorrow?.timings.Fajr)}
                   </span>
                 </h2>
               </div>
-              <div>
+              <div className="mt-auto sm:mt-0">
                 <h3 className="text-xl font-bold tracking text-red-800">{getFormattedDate(2)}</h3>
               </div>
             </div>
