@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 function PrayerTimes() {
-  const [prayerTimes, setPrayerTimes] = useState({ today: null, tomorrow: null, dayAfterTomorrow: null });
+  const [prayerTimes, setPrayerTimes] = useState({ yesterday: null, today: null, tomorrow: null, dayAfterTomorrow: null });
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -29,6 +29,7 @@ function PrayerTimes() {
 
     const fetchAllDays = async () => {
       setLoading(true);
+      const yesterday = await fetchPrayerTimes(-1);
       const today = await fetchPrayerTimes(0);
       const tomorrow = await fetchPrayerTimes(1);
       const dayAfterTomorrow = await fetchPrayerTimes(2);
@@ -39,7 +40,7 @@ function PrayerTimes() {
       const nextFajr = fajrToday !== null && currentTime >= fajrToday ? tomorrow?.timings.Fajr : today?.timings.Fajr;
 
 
-      setPrayerTimes({ today, tomorrow, dayAfterTomorrow, nextFajr });
+      setPrayerTimes({ yesterday, today, tomorrow, dayAfterTomorrow, nextFajr });
       setLoading(false);
     };
 
@@ -84,7 +85,7 @@ function PrayerTimes() {
   };
 
   return (
-    <div className="p-4 sm:p-6 md:p-12 lg:p-18 w-full min-h-full justify-center items-center mb-14">
+    <div className="p-4 sm:p-6 md:p-12 lg:p-18 w-full min-h-full justify-center items-center mb-4">
       <div className="bg-gray-100 p-8 rounded-lg flex flex-1 flex-col mt-10 lg:mt-0 mb-10 max-w-full sm:max-w-md lg:max-w-lg mx-auto">
         <h1 className="text-4xl font-semibold text-blue-700 mb-4 text-center">اَلسَلامُ عَلَيْكُم وَرَحْمَةُ اَللهِ وَبَرَكاتُهُ</h1>
         <p className="font-semibold text-blue-700 mb-0">
@@ -105,7 +106,22 @@ function PrayerTimes() {
           <p className="text-3xl text-blue-700">Loading prayer times...</p>
         ) : (
           <>
-          <div className="bg-gray-200 text-3xl font-semibold text-blue-700 mt-5 p-4 rounded-lg shadow-xl flex flex-col sm:flex-row justify-between max-w-full sm:max-w-sm md:max-w-md lg:max-w-lg">
+            <div className="bg-gray-200 text-3xl font-semibold text-blue-700 mt-5 p-4 rounded-lg shadow-xl flex flex-col sm:flex-row justify-between max-w-full sm:max-w-sm md:max-w-md lg:max-w-lg">
+              <div>
+                <h2>
+                  <span className="mr-1">Tahajjud</span>
+                  <span className="text-xl font-bold italic tracking-tighter">yesterday: </span>
+                  <span className="font-bold tracking-tighter block sm-inline lg:inline m-3">
+                    {calculateTahajjudTime(prayerTimes.yesterday?.timings.Maghrib, prayerTimes.yesterday?.timings.Fajr)}
+                  </span>
+                </h2>
+              </div>
+              <div className="mt-auto sm:mt-0">
+                <h3 className="text-xl font-bold tracking text-red-800">{getFormattedDate(-1)}</h3>
+              </div>
+            </div>
+
+          <div className="bg-gray-300 text-3xl font-semibold text-blue-700 mt-5 p-4 rounded-lg shadow-xl flex flex-col sm:flex-row justify-between max-w-full sm:max-w-sm md:max-w-md lg:max-w-lg">
               <div>
                 <h2>
                   <span className="mr-1">Tahajjud</span>
@@ -139,7 +155,7 @@ function PrayerTimes() {
                 <h2>
                   <span className="mr-1">Tahajjud</span>
                   <span className="text-xl font-bold italic tracking-tighter">overmorrow:</span>
-                  <span className="lg:m-0 font-bold tracking-tighter block sm-inline lg:inline m-3">
+                  <span className="font-bold tracking-tighter block sm-inline lg:inline m-3">
                     {calculateTahajjudTime(prayerTimes.dayAfterTomorrow?.timings.Maghrib, prayerTimes.dayAfterTomorrow?.timings.Fajr)}
                   </span>
                 </h2>
@@ -156,6 +172,9 @@ function PrayerTimes() {
               <h1 className="text-xl tracking-tighter font-semibold text-blue-700 mb-4 text-ellipsis">
                   <span className="text-red-700">Overmorrow:</span> the day after tomorrow.
               </h1>
+              <p className="bg-gray-200 p-2">
+                <span className="text-xl text-red-700 tracking-tighter"><span className="font-bold">Note:</span> consider the times if you are checking after midnight (12:00am), you will need to look at yesterday's time because the last third of the night MAY be past midnight.</span>
+              </p>
               
                 
             </div>
