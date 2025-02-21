@@ -21,10 +21,22 @@ function App() {
           <h1 className='hidden md:block text-2xl font-bold mr-2'>Tahajjud</h1>
 
           </div>
-          <ul className='flex space-x-5'>
-            <li><a href="/" className='hover:underline font-bold'>Home</a></li>
-            <li><a href="/tahajjud" className='hover:underline font-bold'>Tahajjud</a></li>
-            <li><a href="/creator" className='hover:underline font-bold'>Creator</a></li>
+          <ul className='flex space-x-6'>
+            <li className='p-1'><a href="/" className='hover:underline font-bold'>
+                  <i className="fas fa-home text-3xl md:text-2xl lg:text-2xl"></i>
+                  <span className="hidden md:inline ml-2">Home</span>
+                </a>
+            </li>
+            <li className='p-1'><a href="/tahajjud" className='hover:underline font-bold'>
+                  <i className="fa-solid fa-hands-praying text-3xl md:text-2xl lg:text-2xl"></i>
+                  <span className="hidden md:inline ml-2">Tahajjud</span>
+                </a>
+            </li>
+            <li className='p-1'><a href="/creator" className='hover:underline font-bold'>
+                  <i className="fa-regular fa-circle-user text-3xl md:text-2xl lg:text-2xl"></i>
+                  <span className="hidden md:inline ml-2">Creator</span>
+                </a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -40,21 +52,29 @@ function App() {
           <p className='text-sm'>&copy; {new Date().getFullYear()} Tahajjud Times. All rights reserved.</p>
 
           <ul className='flex space-x-4 mt-2 sm:mt-0'>
-            <li><a href="/" className='hover:underline'>
-                  <i className="fas fa-home"></i>
-                  <span className="hidden md:inline">Home</span>
-                </a>
+            <li>
+              <a href="/" className='hover:underline'>
+                <span className="md:inline mt-2 mb-2">Home</span>
+              </a>
             </li>
-            <li><a href="/tahajjud" className='hover:underline'>Tahajjud</a></li>
-            <li><a href="/creator" className='hover:underline'>Creator</a></li>
+            <li>
+              <a href="/tahajjud" className='hover:underline'>
+                <span className="md:inline mt-2 mb-2">Tahajjud</span>
+              </a>
+            </li>
+            <li>
+              <a href="/tahajjud" className='hover:underline'>
+                <span className="md:inline mt-2 mb-2">Creator</span>
+              </a>
+            </li>
           </ul>
 
           <div className='flex space-x-4 mt-2 sm:mt-0'>
             <a href='https://github.com/srahman14' target='_blank' rel='noopner noreferrer' className='text-xl hover:text-blue-400'>
-              <i className="fa-brands fa-github"></i>
+              <i className="fa-brands fa-github text-3xl md:text-2xl lg:text-2xl"></i>
             </a>
             <a href='https://www.linkedin.com/in/sayed-r-596b97257/' target='_blank' rel='noopner noreferrer' className='text-xl hover:text-blue-400'>
-              <i className="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-linkedin text-3xl md:text-2xl lg:text-2xl"></i>
             </a>
           </div>
         </div>
