@@ -18,15 +18,11 @@ function Creator() {
             </a>
 
             <a href='https://www.linkedin.com/in/sayed-r-596b97257/' target='_blank' rel='noopener noreferrer' className='text-4xl hover:text-blue-500'>
-              <i class="fa-brands fa-linkedin"></i>
+              <i className="fa-brands fa-linkedin"></i>
             </a>
           </div>
         </div>
       </div>
-{/* 
-      <div className="bg-gray-100 p-8 rounded-lg flex flex-1 flex-col mt-10 mb-10 max-w-full sm:max-w-md lg:max-w-lg mx-auto">
-        <h1>EXTRA DIV</h1>
-      </div> */}
     </div>
   );
 }
