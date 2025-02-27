@@ -4,6 +4,9 @@ import Home from './pages/Home';
 import Tahajjud from './pages/Tahajjud';
 import Creator from './pages/Creator';
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import Ramadan from './pages/Ramadan';
+import BlogPage from './pages/BlogPage';
+import BlogPost from './pages/BlogPostPage';
 
 function App() {
   return (
@@ -27,9 +30,19 @@ function App() {
                   <span className="hidden md:inline ml-2">Home</span>
                 </a>
             </li>
+            <li className='p-1'><a href="/ramadan" className='hover:underline font-bold'>
+                  <i className="fa-solid fa-moon text-3xl md:text-2xl lg:text-2xl"></i>
+                  <span className="hidden md:inline ml-2">Ramadan</span>
+                </a>
+            </li>
             <li className='p-1'><a href="/tahajjud" className='hover:underline font-bold'>
                   <i className="fa-solid fa-hands-praying text-3xl md:text-2xl lg:text-2xl"></i>
                   <span className="hidden md:inline ml-2">Tahajjud</span>
+                </a>
+            </li>
+            <li className='p-1'><a href="/blog" className='hover:underline font-bold'>
+                  <i className="fa-solid fa-newspaper text-3xl md:text-2xl lg:text-2xl"></i>
+                  <span className="hidden md:inline ml-2">Blog</span>
                 </a>
             </li>
             <li className='p-1'><a href="/creator" className='hover:underline font-bold'>
@@ -43,7 +56,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/ramadan" element={<Ramadan />} />
         <Route path="/tahajjud" element={<Tahajjud />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:id" element={<BlogPost />} />
         <Route path="/creator" element={<Creator />} />
       </Routes>
 
@@ -63,7 +79,7 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="/tahajjud" className='hover:underline'>
+              <a href="/creator" className='hover:underline'>
                 <span className="md:inline mt-2 mb-2">Creator</span>
               </a>
             </li>
