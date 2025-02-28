@@ -33,7 +33,7 @@ const BlogPage = () => {
               </h2>
               <p className="text-gray-500 text-sm">{post.date}</p>
               <p className="mt-2">{post.excerpt}</p>
-              <div className="flex flex-wrap gap-2 mt-2">
+              <div className="flex flex-wrap gap-2 mt-2 max-w-md">
                 {post.tags.map((tag, index) => (
                   <span
                     key={index}
@@ -45,7 +45,7 @@ const BlogPage = () => {
               </div>
               <Link
                 to={`/blog/${post.id}`}
-                className="text-blue-500 mt-3 block"
+                className="text-blue-500 mt-3 block hover:text-blue-700"
               >
                 Read More →
               </Link>

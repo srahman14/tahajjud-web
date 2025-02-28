@@ -21,8 +21,7 @@ const BlogPost = () => {
           </span>
         ))}
       </div>
-      <div className="mt-4 font-semibold" dangerouslySetInnerHTML={{ __html: post.content }} />
-      <p>Sayed</p>
+      <div className="mt-4 font-semibold prose text-xl bg-gray-200 p-4 rounded-lg" dangerouslySetInnerHTML={{ __html: post.content }} />
       <Link to="/blog" className="text-blue-500 mt-4 block">
         ← Back to Blog
       </Link>
