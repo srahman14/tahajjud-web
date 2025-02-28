@@ -10,7 +10,7 @@ function Tahajjud() {
         </p>
 
         <p className="font-semibold bg-gray-300 rounded-lg p-3 text-blue-700 hover:text-blue-500 mt-4 overflow-x-hidden">
-          <a href='https://islamqa.info/en/answers/216236/how-to-pray-tahajjud-and-witr#what-is-tahajjud'>Source: https://islamqa.info/en/answers/216236/how-to-pray-tahajjud-and-witr#what-is-tahajjud</a>
+          <a href='https://islamqa.info/en/answers/216236/how-to-pray-tahajjud-and-witr#what-is-tahajjud' rel='noopener noreferrer'>Source: https://islamqa.info/en/answers/216236/how-to-pray-tahajjud-and-witr#what-is-tahajjud</a>
         </p>
       </div>
 
@@ -23,7 +23,7 @@ function Tahajjud() {
           </ol>
 
           <p className="font-semibold bg-gray-300 rounded-lg p-3 text-blue-700 hover:text-blue-500 mt-4 overflow-x-hidden">
-            <a href='https://islamqa.info/en/answers/143240/what-is-the-difference-between-tahajjud-and-qiyam-al-layl'>Source: https://islamqa.info/en/answers/143240/what-is-the-difference-between-tahajjud-and-qiyam-al-layl</a>
+            <a href='https://islamqa.info/en/answers/143240/what-is-the-difference-between-tahajjud-and-qiyam-al-layl' rel='noopener noreferrer'>Source: https://islamqa.info/en/answers/143240/what-is-the-difference-between-tahajjud-and-qiyam-al-layl</a>
           </p>
       </div>
 
@@ -38,7 +38,7 @@ function Tahajjud() {
           </p>
 
           <p className="font-semibold bg-gray-300 rounded-lg p-3 text-blue-700 hover:text-blue-500 mt-4 overflow-x-hidden">
-            <a href='https://islamqa.info/en/answers/291824/the-virtue-of-offering-supplication-in-the-last-third-of-the-night'>Source: https://islamqa.info/en/answers/291824/the-virtue-of-offering-supplication-in-the-last-third-of-the-night</a>
+            <a href='https://islamqa.info/en/answers/291824/the-virtue-of-offering-supplication-in-the-last-third-of-the-night' rel='noopener noreferrer'>Source: https://islamqa.info/en/answers/291824/the-virtue-of-offering-supplication-in-the-last-third-of-the-night</a>
           </p>
       </div>
 
@@ -54,18 +54,18 @@ function Tahajjud() {
           </p>
 
           <p className="font-semibold bg-gray-300 rounded-lg p-3 text-blue-700 hover:text-blue-500 mt-4 overflow-x-hidden">
-            <a href='https://islamqa.info/en/answers/216236/how-to-pray-tahajjud-and-witr#how-to-offer-prayers-at-night'>Source: https://islamqa.info/en/answers/216236/how-to-pray-tahajjud-and-witr#how-to-offer-prayers-at-night</a>
+            <a href='https://islamqa.info/en/answers/216236/how-to-pray-tahajjud-and-witr#how-to-offer-prayers-at-night' rel='noopener noreferrer'>Source: https://islamqa.info/en/answers/216236/how-to-pray-tahajjud-and-witr#how-to-offer-prayers-at-night</a>
           </p>
       </div>
 
       <div className="bg-gray-100 p-8 rounded-lg flex flex-1 flex-col mt-10 mb-10 max-w-full sm:max-w-md lg:max-w-lg mx-auto">
         <h1 className="text-4xl font-semibold text-blue-700 mb-4 text-center">How does this site calculate the times for the last third of the night?</h1>
         <p className="font-semibold text-blue-700 mb-0">
-          This site uses the <span><a href='https://aladhan.com/' className='bg-yellow-200 p-1 rounded-lg hover:text-blue-500 hover:bg-yellow-300'>Aladhan API</a></span> to get the time of Maghrib and Fajr (using method of Umm al-Qura) <span className='bg-yellow-200 p-1 rounded-lg'>for London <b>only</b></span>. Thereafter, the time from Maghrib till Fajr is calculated and <span className='bg-yellow-200 p-1 rounded-lg'>divided into three thirds</span>, and simply we subtract the time from Fajr by one-third of the difference to find out the starting point of the <span className='bg-yellow-200 p-1 rounded-lg'>last third of the night!</span>
+          This site uses the <span><a href='https://aladhan.com/' rel='noopener noreferrer' className='bg-yellow-200 p-1 rounded-lg hover:text-blue-500 hover:bg-yellow-300'>Aladhan API</a></span> to get the time of Maghrib and Fajr (using method of Umm al-Qura) <span className='bg-yellow-200 p-1 rounded-lg'>for London <b>only</b></span>. Thereafter, the time from Maghrib till Fajr is calculated and <span className='bg-yellow-200 p-1 rounded-lg'>divided into three thirds</span>, and simply we subtract the time from Fajr by one-third of the difference to find out the starting point of the <span className='bg-yellow-200 p-1 rounded-lg'>last third of the night!</span>
         </p>
         
         <p className="font-semibold bg-gray-300 rounded-lg p-3 text-blue-700 hover:text-blue-500 mt-4 overflow-x-hidden">
-          <a href='https://www.youtube.com/watch?v=rlzFTXfPpFU'>Explanation: https://www.youtube.com/watch?v=rlzFTXfPpFU</a>
+          <a href='https://www.youtube.com/watch?v=rlzFTXfPpFU' rel='noopener noreferrer'>Explanation: https://www.youtube.com/watch?v=rlzFTXfPpFU</a>
         </p>
       </div>
 

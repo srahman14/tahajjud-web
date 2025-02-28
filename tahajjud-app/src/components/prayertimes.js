@@ -89,11 +89,23 @@ function PrayerTimes() {
       <div className="bg-gray-100 p-8 rounded-lg flex flex-1 flex-col mt-10 lg:mt-0 mb-10 max-w-full sm:max-w-md lg:max-w-lg mx-auto">
         <h1 className="text-4xl font-semibold text-blue-700 mb-4 text-center">اَلسَلامُ عَلَيْكُم وَرَحْمَةُ اَللهِ وَبَرَكاتُهُ</h1>
         <p className="font-semibold text-blue-700 mb-0">
-          Below you will find the Tahajjud times for the last third of the night specifically calculated already for you. Tahajjud calculator coming soon!
+          Below you will find the Tahajjud times for the last third of the night specifically calculated already for you.
         </p>
         <p className="text-blue-700 mt-2 bg-yellow-200 p-2 rounded-lg hover:text-blue-500 hover:font-bold font-semibold hover:bg-yellow-300">
           <a href="/tahajjud">More about Tahajjud...</a>
         </p>
+        <p className="font-bold text-blue-700 mb-0 bg-gray-200 p-3 mt-6 rounded-lg">
+        New sections introduced, our Ramadan section alongside our Blog section!
+
+        </p>
+
+        <p className="text-blue-700 mt-2 bg-yellow-200 p-2 rounded-lg hover:text-blue-500 hover:font-bold font-semibold hover:bg-yellow-300">
+          <a href="/ramadan">Check out our Ramadan section! <i>(new)</i></a>
+        </p>
+        <p className="text-blue-700 mt-2 bg-yellow-200 p-2 rounded-lg hover:text-blue-500 hover:font-bold font-semibold hover:bg-yellow-300">
+          <a href="/blog">Check out our blog! <i>(new)</i></a>
+        </p>
+
       </div>
 
       <div className="bg-gray-100 mb-6 p-8 rounded-lg flex-1 flex flex-col max-w-full sm:max-w-md lg:max-w-lg mx-auto">
@@ -167,7 +179,7 @@ function PrayerTimes() {
 
             <div className="mt-8">
               <h1 className="text-xl tracking-tighter font-semibold text-blue-700 mb-4 text-ellipsis">
-                  Occasionally, there may be some <span className="text-red-700">descrepancy</span> by a minute or so.
+                  Occasionally, there may be some <span className="text-red-700">discrepancy</span> by a minute or so.
               </h1>
               <h1 className="text-xl tracking-tighter font-semibold text-blue-700 mb-4 text-ellipsis">
                   <span className="text-red-700">Overmorrow:</span> the day after tomorrow.
