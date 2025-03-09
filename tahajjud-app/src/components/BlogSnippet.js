@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import { blogData  } from '../blogData';
 
 const BlogSnippet = () => {
-    const recentPost = blogData[0]
+    const maxIndex = blogData.length
+    const recentPost = blogData[blogData.length - 1]
     return (
         <div className="bg-gray-100 p-8 rounded-lg flex flex-col w-full max-w-md mx-auto">
         <h1 className="text-2xl font-semibold text-blue-700 mb-4">
@@ -20,7 +21,7 @@ const BlogSnippet = () => {
           ))}
         </div>
 
-        <Link to="/blog" className="text-blue-500 mt-4 mb-4">Read more</Link>
+        <Link to={`/blog/${maxIndex}`} className="text-blue-500 mt-4 mb-4">Read more</Link>
         </div>
     );
 };

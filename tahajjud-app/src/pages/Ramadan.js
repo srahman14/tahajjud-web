@@ -108,7 +108,7 @@ function Ramadan() {
       <div className="bg-gray-100 p-8 rounded-lg flex flex-1 flex-col mt-0 mb-40 w-full max-w-full mx-auto">
         <div className="justify-center items-center text-center">
             <h1 className="text-4xl font-semibold text-blue-700 mb-4 text-center tracking-tighter underline">
-                Daily Hadith
+               Hadith for the Month
             </h1>
 
             <div className="mt-2 text-center max-w-md mx-auto">
@@ -123,7 +123,7 @@ function Ramadan() {
               <span className='italic text-blue-500'>Narrated by <span className='font-bold'>Sunan an-Nasa'i (2106) in-book ref: Book 22, Hadith 17</span></span>
                 
               <p className="font-semibold bg-gray-300 rounded-lg p-3 text-blue-700 hover:text-blue-500 mt-4 overflow-x-hidden">
-                <a href='https://sunnah.com/nasai:2106'>Source: https://sunnah.com/nasai:2106</a>
+                <a href='https://sunnah.com/nasai:2106' rel='noopener noreferrer'>Source: https://sunnah.com/nasai:2106</a>
               </p>
             </div>
         </div>
