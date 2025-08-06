@@ -30,11 +30,11 @@ function App() {
                   <span className="hidden md:inline ml-2">Home</span>
                 </a>
             </li>
-            <li className='p-1'><a href="/ramadan" rel='noopener noreferrer' className='hover:underline font-bold'>
+            {/* <li className='p-1'><a href="/ramadan" rel='noopener noreferrer' className='hover:underline font-bold'>
                   <i className="fa-solid fa-moon text-3xl md:text-2xl lg:text-2xl"></i>
                   <span className="hidden md:inline ml-2">Ramadan</span>
                 </a>
-            </li>
+            </li> */}
             <li className='p-1'><a href="/tahajjud" rel='noopener noreferrer' className='hover:underline font-bold'>
                   <i className="fa-solid fa-hands-praying text-3xl md:text-2xl lg:text-2xl"></i>
                   <span className="hidden md:inline ml-2">About Tahajjud</span>
@@ -83,19 +83,12 @@ function App() {
                 <span className="md:inline mt-2 mb-2">Blog</span>
               </a>
             </li>
-            <li>
-              <a href="/creator" rel='noopener noreferrer' className='hover:underline'>
-                <span className="md:inline mt-2 mb-2">Creator</span>
-              </a>
-            </li>
+
           </ul>
 
           <div className='flex space-x-4 mt-2 sm:mt-0'>
             <a href='https://github.com/srahman14' target='_blank' rel='noopner noreferrer' className='text-xl hover:text-blue-400'>
               <i className="fa-brands fa-github text-3xl md:text-2xl lg:text-2xl"></i>
-            </a>
-            <a href='https://www.linkedin.com/in/sayed-r-596b97257/' target='_blank' rel='noopner noreferrer' className='text-xl hover:text-blue-400'>
-              <i className="fa-brands fa-linkedin text-3xl md:text-2xl lg:text-2xl"></i>
             </a>
           </div>
         </div>
