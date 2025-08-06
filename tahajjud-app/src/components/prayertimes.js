@@ -75,14 +75,18 @@ function PrayerTimes() {
       const hours = Math.floor(lastThirdStart / 60);
       const minutes = lastThirdStart % 60;
   
-      console.log(`Tahajjud Time Calculation: Maghrib=${maghrib}, NextFajr=${nextFajr}, LastThird=${hours}:${minutes}`);
-  
       return `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}`;
     } catch (error) {
-      console.error("Error calculating Tahajjud time:", error);
+      alert.error("Error calculating Tahajjud time:", error);
       return "Error";
     }
   };
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center text-md">Loading...</div>
+    )
+  }
 
   return (
     <div className="p-4 sm:p-6 md:p-12 lg:p-18 w-full min-h-full justify-center items-center mb-4">
@@ -92,19 +96,19 @@ function PrayerTimes() {
           Below you will find the Tahajjud times for the last third of the night specifically calculated already for you.
         </p>
         <p className="text-blue-700 mt-2 bg-yellow-200 p-2 rounded-lg hover:text-blue-500 hover:font-bold font-semibold hover:bg-yellow-300">
-          <a href="/tahajjud">More about Tahajjud...</a>
+          <a href="/tahajjud" rel="noopener noreferrer">More about Tahajjud...</a>
         </p>
-        <p className="font-bold text-blue-700 mb-0 bg-gray-200 p-3 mt-6 rounded-lg">
+        {/* <p className="font-bold text-blue-700 mb-0 bg-gray-200 p-3 mt-6 rounded-lg">
         New sections introduced, our Ramadan section alongside our Blog section!
 
         </p>
 
         <p className="text-blue-700 mt-2 bg-yellow-200 p-2 rounded-lg hover:text-blue-500 hover:font-bold font-semibold hover:bg-yellow-300">
-          <a href="/ramadan">Check out our Ramadan section! <i>(new)</i></a>
+          <a href="/ramadan rel='noopener noreferrer'">Check out our Ramadan section! <i>(new)</i></a>
         </p>
         <p className="text-blue-700 mt-2 bg-yellow-200 p-2 rounded-lg hover:text-blue-500 hover:font-bold font-semibold hover:bg-yellow-300">
-          <a href="/blog">Check out our blog! <i>(new)</i></a>
-        </p>
+          <a href="/blog rel='noopener noreferrer'">Check out our blog! <i>(new)</i></a>
+        </p> */}
 
       </div>
 
@@ -185,7 +189,7 @@ function PrayerTimes() {
                   <span className="text-red-700">Overmorrow:</span> the day after tomorrow.
               </h1>
               <p className="bg-gray-200 p-2">
-                <span className="text-xl text-red-700 tracking-tighter"><span className="font-bold">Note:</span> consider the times if you are checking after midnight (12:00am), you will need to look at yesterday's time because the last third of the night MAY be past midnight.</span>
+                <span className="text-xl text-red-700 tracking-tighter"><span className="font-bold">Note:</span> consider the times if you are checking after midnight (12:00am), you will need to look at yesterday's time because the last third of the night is past midnight.</span>
               </p>
               
                 
