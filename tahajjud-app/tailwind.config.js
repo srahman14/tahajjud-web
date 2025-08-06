@@ -5,11 +5,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: ["Montserrrat", "sans-serif"],
-      backdropBlur: {
-        sm: '4px', 
-        md: '8px',
-        lg: '12px',
-      },
     },
   },
   variants: {},

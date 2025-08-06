@@ -41,28 +41,34 @@ function Ramadan() {
     return fajrDate.toTimeString().slice(0, 5);
   };
 
-  const fetchAllDays = async () => {
-    setLoading(true);
-
-    const todayTimes = await fetchPrayerTimes(0);
-    const tomorrowTimes = await fetchPrayerTimes(1);
-
-    if (todayTimes && tomorrowTimes) {
-      const suhoorToday = calculateSuhoorTime(todayTimes.Fajr);
-      const suhoorTomorrow = calculateSuhoorTime(tomorrowTimes.Fajr);
-
-      setPrayerTimes({
-        today: { maghrib: todayTimes.Maghrib, suhoor: suhoorToday },
-        tomorrow: { maghrib: tomorrowTimes.Maghrib, suhoor: suhoorTomorrow },
-      });
-    }
-
-    setLoading(false);
-  };
-
   useEffect(() => {
+    const fetchAllDays = async () => {
+      setLoading(true);
+
+      const todayTimes = await fetchPrayerTimes(0);
+      const tomorrowTimes = await fetchPrayerTimes(1);
+
+      if (todayTimes && tomorrowTimes) {
+        const suhoorToday = calculateSuhoorTime(todayTimes.Fajr);
+        const suhoorTomorrow = calculateSuhoorTime(tomorrowTimes.Fajr);
+
+        setPrayerTimes({
+          today: { maghrib: todayTimes.Maghrib, suhoor: suhoorToday },
+          tomorrow: { maghrib: tomorrowTimes.Maghrib, suhoor: suhoorTomorrow },
+        });
+      }
+
+      setLoading(false);
+    };
+
     fetchAllDays();
-  }, [fetchAllDays]);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center text-md">Loading...</div>
+    )
+  }
 
   return (
     <div className="bg-blue-500 p-4 sm:p-6 md:p-12 lg:p-18 w-full min-h-screen flex flex-col">
