@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Tahajjud",
+  "name": "Tahajjud Times",
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,6 +21,11 @@
       "src": "madina-logo.jpeg",
       "type": "image/jpeg",
       "sizes": "1920x1347"
+    },
+    {
+      "src": "tahajjud-logo.png",
+      "type": "image/png",
+      "sizes": "500x500"
     }
   ],
   "start_url": ".",
